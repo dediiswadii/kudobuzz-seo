@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://sdks.shopifycdn.com/polaris/2.1.2/polaris.min.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="Polaris-Page">
+		<!-- Header navigation -->
+		  <div class="Polaris-Page__Header Polaris-Page__Header--hasPagination Polaris-Page__Header--hasBreadcrumbs Polaris-Page__Header--hasRollup Polaris-Page__Header--hasSecondaryActions">
+		    <div class="Polaris-Page__Navigation">
+			      <nav role="navigation"><a class="Polaris-Breadcrumbs__Breadcrumb" data-polaris-unstyled="true">
+			      	<span class="Polaris-Breadcrumbs__Icon">
+			      		<span class="Polaris-Icon">
+			      			<svg class="Polaris-Icon__Svg" viewBox="0 0 20 20" focusable="false" aria-hidden="true">
+			      				<path d="M12 16a.997.997 0 0 1-.707-.293l-5-5a.999.999 0 0 1 0-1.414l5-5a.999.999 0 1 1 1.414 1.414L8.414 10l4.293 4.293A.999.999 0 0 1 12 16" fill-rule="evenodd"></path>
+			      			</svg>
+			      		</span>
+			      	</span>	
+			      	<span class="Polaris-Breadcrumbs__Content">Back to dashboard</span></a>
+			     </nav>
+		      
+		          
+		    </div>
+		  </div>
+		 <!-- End Header navigation -->
+		 <div class="clear-space"></div>
+	<!-- Banner upgrade -->
+		<div class="Polaris-Banner Polaris-Banner--statusInfo Polaris-Banner--withinPage" tabindex="0" role="status" aria-live="polite" aria-labelledby="Banner7Heading" aria-describedby="Banner7Content">
+			<div class="Polaris-Banner__Ribbon">
+				<span class="Polaris-Icon Polaris-Icon--colorTealDark Polaris-Icon--isColored Polaris-Icon--hasBackdrop"><svg class="Polaris-Icon__Svg" viewBox="0 0 20 20" focusable="false" aria-hidden="true"><g fill-rule="evenodd"><circle cx="10" cy="10" r="9" fill="currentColor"></circle><path d="M10 0C4.486 0 0 4.486 0 10s4.486 10 10 10 10-4.486 10-10S15.514 0 10 0m0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8m1-5v-3a1 1 0 0 0-1-1H9a1 1 0 1 0 0 2v3a1 1 0 0 0 1 1h1a1 1 0 1 0 0-2m-1-5.9a1.1 1.1 0 1 0 0-2.2 1.1 1.1 0 0 0 0 2.2"></path></g></svg></span>
+			</div>
+			<div>
+					<div class="Polaris-Banner__Heading" id="Banner7Heading">
+						<p class="Polaris-Heading">Let's use Autopilot features</p>
+					</div>
+				<div class="Polaris-Banner__Content" id="Banner7Content">
+						<p>Make sure you know how these changes affect your store.</p>
+						<div class="Polaris-Banner__Actions">
+							<div class="Polaris-ButtonGroup">
+								<div class="Polaris-ButtonGroup__Item">
+									<button type="button" class="Polaris-Button Polaris-Button--outline">
+										<span class="Polaris-Button__Content"><span>Upgrade</span></span>
+									</button>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	<!-- End Banner upgrade -->
+		<div class="clear-space"></div>
+		<!-- Tabs -->
+		<div style="position: relative;">
+			<button type="button" class="Polaris-Button Polaris-Button--primary save-button"><span class="Polaris-Button__Content"><span>Save settings</span></span></button>
+			<ul role="tablist" class="Polaris-Tabs">
+				<li role="presentation" class="Polaris-Tabs__TabContainer">
+					<button id="all-customers" role="tab" tabindex="0" class="Polaris-Tabs__Tab Polaris-Tabs__Tab--selected" aria-selected="true" aria-controls="all-customers-content" aria-label="All customers" class="tablinks" onclick="openBox(event, 'settings')"><span class="Polaris-Tabs__Title">Settings</span></button>
+				</li>
+				<li role="presentation" class="Polaris-Tabs__TabContainer">
+					<button id="accepts-marketing" role="tab" tabindex="-1" class="Polaris-Tabs__Tab" aria-selected="false" aria-controls="accepts-marketing-content" class="tablinks" onclick="openBox(event, 'report')"><span class="Polaris-Tabs__Title">Report</span></button>
+				</li>
+			</ul>
+
+		</div>	
+		<!-- End tabs -->
+		<div class="clear-space"></div>
+
+		<div id="settings" class="tabcontent" style="display: block;">
+			<!-- Annotation layout persection -->
+			<div class="Polaris-Layout">
+				<div class="Polaris-Layout__AnnotatedSection">
+				    <div class="Polaris-Layout__AnnotationWrapper">
+				      	<div class="Polaris-Layout__Annotation">
+				        	<div class="Polaris-TextContainer">
+							  <h2 class="Polaris-Heading">Meta Title Optimization</h2>
+							  <p>Shopify POS is the easiest way to sell your products in person. Available for iPad, iPhone, and Android.</p>
+							  <a class="Polaris-Button Polaris-Button--plain" href="https://help.shopify.com" data-polaris-unstyled="true"><span class="Polaris-Button__Content"><span>Learn more</span></span></a>
+							</div>
+				      	</div>
+				      	<div class="Polaris-Layout__AnnotationContent">
+					        <div class="Polaris-Card">
+					          	<div class="Polaris-Card__Section">
+					            	<fieldset class="Polaris-ChoiceList">
+										  <legend class="Polaris-ChoiceList__Title">Conditions</legend>
+										  <ul class="Polaris-ChoiceList__Choices">
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton4">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton4" name="ChoiceList1" type="radio" class="Polaris-RadioButton__Input" value="hidden">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Optimize for only pages with no meta title</span>
+										    	</label>
+										    </li>
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton5">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton5" name="ChoiceList1" type="radio" class="Polaris-RadioButton__Input" value="optional">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Optimize for all pages</span>
+										    	</label>
+										    </li>
+										  </ul>
+
+										  <div class="clear-space"></div>
+
+										   <legend class="Polaris-ChoiceList__Title">Rules</legend>
+										  <ul class="Polaris-ChoiceList__Choices">
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton6">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton6" name="ChoiceList1" type="radio" class="Polaris-RadioButton__Input" value="hidden">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Let SEO Doctor Optimize</span>
+										    	</label>
+										    </li>
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton7">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton7" name="ChoiceList1" type="radio" class="Polaris-RadioButton__Input" value="optional">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Use Target Keyword Only</span>
+										    	</label>
+										    </li>
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton8">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton8" name="ChoiceList1" type="radio" class="Polaris-RadioButton__Input" value="optional">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Use Target Keyword and Title</span>
+										    	</label>
+										    </li>
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton9">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton9" name="ChoiceList1" type="radio" class="Polaris-RadioButton__Input" value="optional">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Use Target Keyword and Title and Business Name</span>
+										    	</label>
+										    </li>
+										    </ul>
+									</fieldset>
+									
+					        	</div>
+					      	</div>
+				    	</div>
+				  	</div>
+
+				</div>
+			</div>
+			<div class="border-horizon"></div>
+			<!-- End Annotation layout persection -->
+
+			<!-- Annotation layout persection -->
+			<div class="Polaris-Layout">
+				<div class="Polaris-Layout__AnnotatedSection">
+				    <div class="Polaris-Layout__AnnotationWrapper">
+				      	<div class="Polaris-Layout__Annotation">
+				        	<div class="Polaris-TextContainer">
+							  <h2 class="Polaris-Heading">Meta Description Optimization</h2>
+							  <p>Shopify POS is the easiest way to sell your products in person. Available for iPad, iPhone, and Android.</p>
+							  <a class="Polaris-Button Polaris-Button--plain" href="https://help.shopify.com" data-polaris-unstyled="true"><span class="Polaris-Button__Content"><span>Learn more</span></span></a>
+							</div>
+				      	</div>
+				      	<div class="Polaris-Layout__AnnotationContent">
+					        <div class="Polaris-Card">
+					          	<div class="Polaris-Card__Section">
+					            	<fieldset class="Polaris-ChoiceList">
+										  <legend class="Polaris-ChoiceList__Title">Conditions</legend>
+										  <ul class="Polaris-ChoiceList__Choices">
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton10">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton10" name="ChoiceList2" type="radio" class="Polaris-RadioButton__Input" value="hidden">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Optimize for only pages with no meta descriptions</span>
+										    	</label>
+										    </li>
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton11">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton11" name="ChoiceList2" type="radio" class="Polaris-RadioButton__Input" value="optional">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Optimize for all pages</span>
+										    	</label>
+										    </li>
+										  </ul>
+
+										  <div class="clear-space"></div>
+
+										   <legend class="Polaris-ChoiceList__Title">Rules</legend>
+										  <ul class="Polaris-ChoiceList__Choices">
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton12">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton12" name="ChoiceList2" type="radio" class="Polaris-RadioButton__Input" value="hidden">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Let SEO Doctor Optimize</span>
+										    	</label>
+										    </li>
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton13">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton13" name="ChoiceList2" type="radio" class="Polaris-RadioButton__Input" value="optional">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Use Description Only</span>
+										    	</label>
+										    </li>
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton14">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton14" name="ChoiceList2" type="radio" class="Polaris-RadioButton__Input" value="optional">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Use Target keyword and Business Name</span>
+										    	</label>
+										    </li>
+										    
+										    </ul>
+									</fieldset>
+									
+					        	</div>
+					      	</div>
+				    	</div>
+				  	</div>
+
+				</div>
+			</div>
+			<div class="border-horizon"></div>
+			<!-- End Annotation layout persection -->
+
+			<!-- Annotation layout persection -->
+			<div class="Polaris-Layout">
+				<div class="Polaris-Layout__AnnotatedSection">
+				    <div class="Polaris-Layout__AnnotationWrapper">
+				      	<div class="Polaris-Layout__Annotation">
+				        	<div class="Polaris-TextContainer">
+							  <h2 class="Polaris-Heading">Image Alt Text</h2>
+							  <p>Shopify POS is the easiest way to sell your products in person. Available for iPad, iPhone, and Android.</p>
+							  <a class="Polaris-Button Polaris-Button--plain" href="https://help.shopify.com" data-polaris-unstyled="true"><span class="Polaris-Button__Content"><span>Learn more</span></span></a>
+							</div>
+				      	</div>
+				      	<div class="Polaris-Layout__AnnotationContent">
+					        <div class="Polaris-Card">
+					          	<div class="Polaris-Card__Section">
+					            	<fieldset class="Polaris-ChoiceList">
+										  <legend class="Polaris-ChoiceList__Title">Conditions</legend>
+										  <ul class="Polaris-ChoiceList__Choices">
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton15">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton15" name="ChoiceList3" type="radio" class="Polaris-RadioButton__Input" value="hidden">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Optimize for only images with no alt text</span>
+										    	</label>
+										    </li>
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton16">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton16" name="ChoiceList3" type="radio" class="Polaris-RadioButton__Input" value="optional">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Optimize for all pages</span>
+										    	</label>
+										    </li>
+										  </ul>
+
+										  <div class="clear-space"></div>
+
+										   <legend class="Polaris-ChoiceList__Title">Rules</legend>
+										  <ul class="Polaris-ChoiceList__Choices">
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton17">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton17" name="ChoiceList3" type="radio" class="Polaris-RadioButton__Input" value="hidden">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Let SEO Doctor Optimize</span>
+										    	</label>
+										    </li>
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton18">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton18" name="ChoiceList3" type="radio" class="Polaris-RadioButton__Input" value="optional">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Use Target Keyword Only</span>
+										    	</label>
+										    </li>
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton19">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton19" name="ChoiceList3" type="radio" class="Polaris-RadioButton__Input" value="optional">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Use Target Keyword & Product Name</span>
+										    	</label>
+										    </li>
+										  	  
+										  </ul>
+									</fieldset>
+									
+					        	</div>
+					      	</div>
+				    	</div>
+				  	</div>
+
+				</div>
+			</div>
+			<div class="border-horizon"></div>
+			<!-- End Annotation layout persection -->
+
+
+			<!-- Annotation layout persection -->
+			<div class="Polaris-Layout">
+				<div class="Polaris-Layout__AnnotatedSection">
+				    <div class="Polaris-Layout__AnnotationWrapper">
+				      	<div class="Polaris-Layout__Annotation">
+				        	<div class="Polaris-TextContainer">
+							  <h2 class="Polaris-Heading">Image Compression</h2>
+							  <p>Shopify POS is the easiest way to sell your products in person. Available for iPad, iPhone, and Android.</p>
+							  <a class="Polaris-Button Polaris-Button--plain" href="https://help.shopify.com" data-polaris-unstyled="true"><span class="Polaris-Button__Content"><span>Learn more</span></span></a>
+							</div>
+				      	</div>
+				      	<div class="Polaris-Layout__AnnotationContent">
+					        <div class="Polaris-Card">
+					          	<div class="Polaris-Card__Section">
+					            	<fieldset class="Polaris-ChoiceList">
+										  <legend class="Polaris-ChoiceList__Title">Conditions</legend>
+										  <ul class="Polaris-ChoiceList__Choices">
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton20">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton20" name="ChoiceList4" type="radio" class="Polaris-RadioButton__Input" value="hidden">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Compress All Images</span>
+										    	</label>
+										    </li>
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton21">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton21" name="ChoiceList4" type="radio" class="Polaris-RadioButton__Input" value="optional">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Compress Only All Images Above 50kb</span>
+										    	</label>
+										    </li>
+										  </ul>
+
+										  <div class="clear-space"></div>
+
+										   <legend class="Polaris-ChoiceList__Title">Rules</legend>
+										  <ul class="Polaris-ChoiceList__Choices">
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton22">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton22" name="ChoiceList4" type="radio" class="Polaris-RadioButton__Input" value="hidden">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Let SEO Doctor Compress</span>
+										    	</label>
+										    </li>
+										    
+										  </ul>
+									</fieldset>
+									
+					        	</div>
+					      	</div>
+				    	</div>
+				  	</div>
+
+				</div>
+			</div>
+			<div class="border-horizon"></div>
+			<!-- End Annotation layout persection -->
+
+
+			<!-- Annotation layout persection -->
+			<div class="Polaris-Layout">
+				<div class="Polaris-Layout__AnnotatedSection">
+				    <div class="Polaris-Layout__AnnotationWrapper">
+				      	<div class="Polaris-Layout__Annotation">
+				        	<div class="Polaris-TextContainer">
+							  <h2 class="Polaris-Heading">Broken Links</h2>
+							  <p>Shopify POS is the easiest way to sell your products in person. Available for iPad, iPhone, and Android.</p>
+							  <a class="Polaris-Button Polaris-Button--plain" href="https://help.shopify.com" data-polaris-unstyled="true"><span class="Polaris-Button__Content"><span>Learn more</span></span></a>
+							</div>
+				      	</div>
+				      	<div class="Polaris-Layout__AnnotationContent">
+					        <div class="Polaris-Card">
+					          	<div class="Polaris-Card__Section">
+					            	<fieldset class="Polaris-ChoiceList">
+										  <legend class="Polaris-ChoiceList__Title">Conditions</legend>
+										  <ul class="Polaris-ChoiceList__Choices">
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton23">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton23" name="ChoiceList5" type="radio" class="Polaris-RadioButton__Input" value="hidden">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">All Broken Links</span>
+										    	</label>
+										    </li>
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton24">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton24" name="ChoiceList5" type="radio" class="Polaris-RadioButton__Input" value="optional">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Only Google Reported Broken Links</span>
+										    	</label>
+										    </li>
+										  </ul>
+
+										  <div class="clear-space"></div>
+
+										   <legend class="Polaris-ChoiceList__Title">Rules</legend>
+										  <ul class="Polaris-ChoiceList__Choices">
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton25">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton25" name="ChoiceList5" type="radio" class="Polaris-RadioButton__Input" value="hidden">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Let SEO Doctor Decide</span>
+										    	</label>
+										    </li>
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton26">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton26" name="ChoiceList5" type="radio" class="Polaris-RadioButton__Input" value="hidden">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Only Google Reported Broken Links</span>
+										    	</label>
+										    	<ul class="checkbox-default">
+										    		<li>
+										    			<label class="Polaris-Choice" for="Checkbox1">
+											    			<span class="Polaris-Choice__Control">
+											    				<span class="Polaris-Checkbox">
+											    					<input id="Checkbox1" type="checkbox" class="Polaris-Checkbox__Input" aria-invalid="false" role="checkbox" aria-checked="false" value="">
+											    						<span class="Polaris-Checkbox__Backdrop"></span>
+											    						<span class="Polaris-Checkbox__Icon">
+											    							<span class="Polaris-Icon">
+											    								<svg class="Polaris-Icon__Svg" viewBox="0 0 20 20" focusable="false" aria-hidden="true">
+											    									<g fill-rule="evenodd"><path d="M8.315 13.859l-3.182-3.417a.506.506 0 0 1 0-.684l.643-.683a.437.437 0 0 1 .642 0l2.22 2.393 4.942-5.327a.437.437 0 0 1 .643 0l.643.684a.504.504 0 0 1 0 .683l-5.91 6.35a.437.437 0 0 1-.642 0"></path><path d="M8.315 13.859l-3.182-3.417a.506.506 0 0 1 0-.684l.643-.683a.437.437 0 0 1 .642 0l2.22 2.393 4.942-5.327a.437.437 0 0 1 .643 0l.643.684a.504.504 0 0 1 0 .683l-5.91 6.35a.437.437 0 0 1-.642 0"></path></g>
+											    								</svg>
+											    							</span>
+											    						</span>
+											    				</span>
+											    			</span>
+											    			<span class="Polaris-Choice__Label">Product Pages</span>
+											    		</label>
+														<div class="Polaris-Connected" style="margin: 10px 0 15px 22px;">
+																<div class="Polaris-Connected__Item Polaris-Connected__Item--connection">
+																	<div class="Polaris-Labelled--hidden">
+																		
+																		<div class="Polaris-Select">
+																			<select id="Select6" class="Polaris-Select__Input" aria-invalid="false">
+																				<option value="imagealttags.myshopify.com">imagealttags.myshopify.com</option>
+																			</select>
+																			<div class="Polaris-Select__Icon">
+																				<span class="Polaris-Icon">
+																					<svg class="Polaris-Icon__Svg" viewBox="0 0 20 20" focusable="false" aria-hidden="true"><path d="M13 8l-3-3-3 3h6zm-.1 4L10 14.9 7.1 12h5.8z" fill-rule="evenodd"></path></svg>
+																				</span>
+																			</div>
+																			<div class="Polaris-Select__Backdrop"></div>
+																		</div>
+																	</div>
+																</div>
+																<div class="Polaris-Connected__Item Polaris-Connected__Item--primary">
+																	<div class="Polaris-TextField">
+																		<input id="TextField15" class="Polaris-TextField__Input" type="email" aria-labelledby="TextField15Label" aria-invalid="false" value="">
+																		<div class="Polaris-TextField__Backdrop"></div>
+																	</div>
+																</div>
+																
+															</div>
+										    		</li>
+										    		<li>
+										    			<label class="Polaris-Choice" for="Checkbox2">
+											    			<span class="Polaris-Choice__Control">
+											    				<span class="Polaris-Checkbox">
+											    					<input id="Checkbox2" type="checkbox" class="Polaris-Checkbox__Input" aria-invalid="false" role="checkbox" aria-checked="false" value="">
+											    						<span class="Polaris-Checkbox__Backdrop"></span>
+											    						<span class="Polaris-Checkbox__Icon">
+											    							<span class="Polaris-Icon">
+											    								<svg class="Polaris-Icon__Svg" viewBox="0 0 20 20" focusable="false" aria-hidden="true">
+											    									<g fill-rule="evenodd"><path d="M8.315 13.859l-3.182-3.417a.506.506 0 0 1 0-.684l.643-.683a.437.437 0 0 1 .642 0l2.22 2.393 4.942-5.327a.437.437 0 0 1 .643 0l.643.684a.504.504 0 0 1 0 .683l-5.91 6.35a.437.437 0 0 1-.642 0"></path><path d="M8.315 13.859l-3.182-3.417a.506.506 0 0 1 0-.684l.643-.683a.437.437 0 0 1 .642 0l2.22 2.393 4.942-5.327a.437.437 0 0 1 .643 0l.643.684a.504.504 0 0 1 0 .683l-5.91 6.35a.437.437 0 0 1-.642 0"></path></g>
+											    								</svg>
+											    							</span>
+											    						</span>
+											    				</span>
+											    			</span>
+											    			<span class="Polaris-Choice__Label">Collection Pages</span>
+											    		</label>
+										    		</li>
+										    		<li>
+										    			<label class="Polaris-Choice" for="Checkbox3">
+											    			<span class="Polaris-Choice__Control">
+											    				<span class="Polaris-Checkbox">
+											    					<input id="Checkbox3" type="checkbox" class="Polaris-Checkbox__Input" aria-invalid="false" role="checkbox" aria-checked="false" value="">
+											    						<span class="Polaris-Checkbox__Backdrop"></span>
+											    						<span class="Polaris-Checkbox__Icon">
+											    							<span class="Polaris-Icon">
+											    								<svg class="Polaris-Icon__Svg" viewBox="0 0 20 20" focusable="false" aria-hidden="true">
+											    									<g fill-rule="evenodd"><path d="M8.315 13.859l-3.182-3.417a.506.506 0 0 1 0-.684l.643-.683a.437.437 0 0 1 .642 0l2.22 2.393 4.942-5.327a.437.437 0 0 1 .643 0l.643.684a.504.504 0 0 1 0 .683l-5.91 6.35a.437.437 0 0 1-.642 0"></path><path d="M8.315 13.859l-3.182-3.417a.506.506 0 0 1 0-.684l.643-.683a.437.437 0 0 1 .642 0l2.22 2.393 4.942-5.327a.437.437 0 0 1 .643 0l.643.684a.504.504 0 0 1 0 .683l-5.91 6.35a.437.437 0 0 1-.642 0"></path></g>
+											    								</svg>
+											    							</span>
+											    						</span>
+											    				</span>
+											    			</span>
+											    			<span class="Polaris-Choice__Label">Blog Pages</span>
+											    		</label>
+										    		</li>
+										    		<li>
+										    			<label class="Polaris-Choice" for="Checkbox4">
+											    			<span class="Polaris-Choice__Control">
+											    				<span class="Polaris-Checkbox">
+											    					<input id="Checkbox4" type="checkbox" class="Polaris-Checkbox__Input" aria-invalid="false" role="checkbox" aria-checked="false" value="">
+											    						<span class="Polaris-Checkbox__Backdrop"></span>
+											    						<span class="Polaris-Checkbox__Icon">
+											    							<span class="Polaris-Icon">
+											    								<svg class="Polaris-Icon__Svg" viewBox="0 0 20 20" focusable="false" aria-hidden="true">
+											    									<g fill-rule="evenodd"><path d="M8.315 13.859l-3.182-3.417a.506.506 0 0 1 0-.684l.643-.683a.437.437 0 0 1 .642 0l2.22 2.393 4.942-5.327a.437.437 0 0 1 .643 0l.643.684a.504.504 0 0 1 0 .683l-5.91 6.35a.437.437 0 0 1-.642 0"></path><path d="M8.315 13.859l-3.182-3.417a.506.506 0 0 1 0-.684l.643-.683a.437.437 0 0 1 .642 0l2.22 2.393 4.942-5.327a.437.437 0 0 1 .643 0l.643.684a.504.504 0 0 1 0 .683l-5.91 6.35a.437.437 0 0 1-.642 0"></path></g>
+											    								</svg>
+											    							</span>
+											    						</span>
+											    				</span>
+											    			</span>
+											    			<span class="Polaris-Choice__Label">Every Other Pages</span>
+											    		</label>
+										    		</li>
+										    	</ul>
+										    </li>
+										  </ul>
+									</fieldset>
+									
+					        	</div>
+					      	</div>
+				    	</div>
+				  	</div>
+
+				</div>
+			</div>
+			<div class="border-horizon"></div>
+			<!-- End Annotation layout persection -->
+
+			<!-- Annotation layout persection -->
+			<div class="Polaris-Layout">
+				<div class="Polaris-Layout__AnnotatedSection">
+				    <div class="Polaris-Layout__AnnotationWrapper">
+				      	<div class="Polaris-Layout__Annotation">
+				        	<div class="Polaris-TextContainer">
+							  <h2 class="Polaris-Heading">Sitemap Submission</h2>
+							  <p>Shopify POS is the easiest way to sell your products in person. Available for iPad, iPhone, and Android.</p>
+							  <a class="Polaris-Button Polaris-Button--plain" href="https://help.shopify.com" data-polaris-unstyled="true"><span class="Polaris-Button__Content"><span>Learn more</span></span></a>
+							</div>
+				      	</div>
+				      	<div class="Polaris-Layout__AnnotationContent">
+					        <div class="Polaris-Card">
+					          	<div class="Polaris-Card__Section">
+					            	<fieldset class="Polaris-ChoiceList">
+										  <legend class="Polaris-ChoiceList__Title">Sitemap automation submission</legend>
+										  <ul class="Polaris-ChoiceList__Choices">
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton27">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton27" name="ChoiceList6" type="radio" class="Polaris-RadioButton__Input" value="hidden">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Every 14 Days</span>
+										    	</label>
+										    </li>
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton28">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton28" name="ChoiceList6" type="radio" class="Polaris-RadioButton__Input" value="optional">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Every 30 Days</span>
+										    	</label>
+										    </li>
+										  </ul>
+
+									</fieldset>
+									
+					        	</div>
+					      	</div>
+				    	</div>
+				  	</div>
+
+				</div>
+			</div>
+			<div class="border-horizon"></div>
+			<!-- End Annotation layout persection -->
+
+			<!-- Annotation layout persection -->
+			<div class="Polaris-Layout">
+				<div class="Polaris-Layout__AnnotatedSection">
+				    <div class="Polaris-Layout__AnnotationWrapper">
+				      	<div class="Polaris-Layout__Annotation">
+				        	<div class="Polaris-TextContainer">
+							  <h2 class="Polaris-Heading">Submit Json-LD</h2>
+							  <p>Shopify POS is the easiest way to sell your products in person. Available for iPad, iPhone, and Android.</p>
+							  <a class="Polaris-Button Polaris-Button--plain" href="https://help.shopify.com" data-polaris-unstyled="true"><span class="Polaris-Button__Content"><span>Learn more</span></span></a>
+							</div>
+				      	</div>
+				      	<div class="Polaris-Layout__AnnotationContent">
+					        <div class="Polaris-Card">
+					          	<div class="Polaris-Card__Section">
+					            	<fieldset class="Polaris-ChoiceList">
+										  <legend class="Polaris-ChoiceList__Title">Json-LD submission</legend>
+										  <ul class="Polaris-ChoiceList__Choices">
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton29">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton29" name="ChoiceList7" type="radio" class="Polaris-RadioButton__Input" value="hidden">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Once</span>
+										    	</label>
+										    </li>
+										    <li>
+										    	<label class="Polaris-Choice" for="RadioButton30">
+										    		<span class="Polaris-Choice__Control">
+										    			<span class="Polaris-RadioButton">
+										    				<input id="RadioButton30" name="ChoiceList7" type="radio" class="Polaris-RadioButton__Input" value="optional">
+										    				<span class="Polaris-RadioButton__Backdrop"></span>
+										    				<span class="Polaris-RadioButton__Icon"></span>
+										    			</span>
+										    		</span>
+										    		<span class="Polaris-Choice__Label">Everytime company information is updated</span>
+										    	</label>
+										    </li>
+										  </ul>
+
+									</fieldset>
+									
+					        	</div>
+					      	</div>
+				    	</div>
+				  	</div>
+
+				</div>
+			</div>
+			<!-- End Annotation layout persection -->
+		</div>
+
+		<div id="report" class="tabcontent" >
+			  
+			    <!-- <div class="Polaris-Page__Title">
+			      <h1 class="Polaris-DisplayText Polaris-DisplayText--sizeLarge">1000 issues fixed</h1>
+			    </div>
+				 <div class="Polaris-Page__Content">
+				    <div class="Polaris-Card">
+				      <div class="">
+				        <div class="header-table">
+				        	<span class="Polaris-TextStyle--variationSubdued">Showing 10 issues of 50 issues</span>
+				        	<div class="select-root">
+							  <div class="Polaris-Select">
+							  	
+							  	<select id="Select2" class="Polaris-Select__Input select-with-input" aria-invalid="false">
+							  		<option value="today">Issue description</option>
+							  		<option value="yesterday">Issue type</option>
+							  		<option value="lastWeek">Fixed date</option>
+							  	</select>
+
+							    <div class="Polaris-Select__Icon">
+							    	<span class="Polaris-Icon">
+							    		<svg class="Polaris-Icon__Svg" viewBox="0 0 20 20" focusable="false" aria-hidden="true"><path d="M13 8l-3-3-3 3h6zm-.1 4L10 14.9 7.1 12h5.8z" fill-rule="evenodd"></path></svg>
+							    	</span></div>
+							    	<div class="Polaris-Select__Backdrop"></div>
+							    	<div class="short-select-text">
+								  		Short by
+								  	</div>
+							  </div>
+							</div>
+				        </div>
+				        <div class="table-content">
+				        	<table class="autopilot-report">
+				              <thead>
+				                <tr>
+				                  <th class="table-text">
+				                  		Issue description
+				                  </th>
+				                  <th class="table-text-type">
+				                  		Issue type
+				                  </th>
+				                  <th class="table-date-time"> 
+				                  		Fixed date
+				                  </th>
+				                </tr>
+				              </thead> 
+				              <tbody>
+				              	<tr>
+				              		<td class="table-text-content">
+				              			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+				              		</td>
+				              		<td class="table-date-time-content">
+				              			Error Page
+				              		</td>
+				              		<td class="table-text-type-content">
+				              			June 19, 2020, 16:30pm
+				              		</td>
+				              	</tr>	
+				              	<tr>
+				              		<td class="table-text-content">
+				              			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+				              		</td>
+				              		<td class="table-date-time-content">
+				              			Error Page
+				              		</td>
+				              		<td class="table-text-type-content">
+				              			June 19, 2020, 16:30pm
+				              		</td>
+				              	</tr>	
+				              	<tr>
+				              		<td class="table-text-content">
+				              			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+				              		</td>
+				              		<td class="table-date-time-content">
+				              			Error Page
+				              		</td>
+				              		<td class="table-text-type-content">
+				              			June 19, 2020, 16:30pm
+				              		</td>
+				              	</tr>	
+				              	<tr>
+				              		<td class="table-text-content">
+				              			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+				              		</td>
+				              		<td class="table-date-time-content">
+				              			Error Page
+				              		</td>
+				              		<td class="table-text-type-content">
+				              			June 19, 2020, 16:30pm
+				              		</td>
+				              	</tr>	
+				              	<tr>
+				              		<td class="table-text-content">
+				              			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+				              		</td>
+				              		<td class="table-date-time-content">
+				              			Error Page
+				              		</td>
+				              		<td class="table-text-type-content">
+				              			June 19, 2020, 16:30pm
+				              		</td>
+				              	</tr>	
+				              	
+				              	
+				              </tbody>
+				            </table>   
+				        </div>
+				         <div class="footer-table">
+				         	<div class="pagination-root">
+				         		<nav class="Polaris-Pagination" aria-label="Pagination"><button class="Polaris-Pagination__Button" aria-label="Previous"><span class="Polaris-Icon"><svg class="Polaris-Icon__Svg" viewBox="0 0 20 20" focusable="false" aria-hidden="true"><path d="M17 9H5.414l3.293-3.293a.999.999 0 1 0-1.414-1.414l-5 5a.999.999 0 0 0 0 1.414l5 5a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L5.414 11H17a1 1 0 1 0 0-2" fill-rule="evenodd"></path></svg></span></button>
+							  <button
+							    class="Polaris-Pagination__Button" aria-label="Next"><span class="Polaris-Icon"><svg class="Polaris-Icon__Svg" viewBox="0 0 20 20" focusable="false" aria-hidden="true"><path d="M17.707 9.293l-5-5a.999.999 0 1 0-1.414 1.414L14.586 9H3a1 1 0 1 0 0 2h11.586l-3.293 3.293a.999.999 0 1 0 1.414 1.414l5-5a.999.999 0 0 0 0-1.414" fill-rule="evenodd"></path></svg></span></button>
+							</nav>
+							</div>
+				         </div>
+
+
+				      </div>
+				    </div>
+				</div> -->
+
+
+				<!-- empty -->
+				<div class="Polaris-EmptyState">
+				  <div class="Polaris-EmptyState__Section">
+				    <div class="Polaris-EmptyState__DetailsContainer">
+				      <div class="Polaris-EmptyState__Details">
+				        <div class="Polaris-TextContainer">
+				          <p class="Polaris-DisplayText Polaris-DisplayText--sizeMedium">Data report is empty</p>
+				          <div class="Polaris-EmptyState__Content">
+				            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				          </div>
+				        </div>
+				        <div class="Polaris-EmptyState__Actions">
+				          <div class="Polaris-Stack Polaris-Stack--alignmentCenter">
+				            <!-- <div class="Polaris-Stack__Item">
+				            	<button type="button" class="Polaris-Button Polaris-Button--primary Polaris-Button--sizeLarge">
+				            		<span class="Polaris-Button__Content">
+				            			<span class="Polaris-Button__Icon"></span>
+				            			<span>Add transfer</span>
+				            		</span>
+				            	</button>
+				            </div>
+				            <div class="Polaris-Stack__Item">
+				            	<a class="Polaris-Button Polaris-Button--plain" href="https://help.shopify.com" data-polaris-unstyled="true">
+				            		<span class="Polaris-Button__Content">
+				            			<span class="Polaris-Button__Icon"></span>
+				            				<span>Learn more</span>
+				            		</span>
+				            	</a>
+				            </div> -->
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				    <div class="Polaris-EmptyState__ImageContainer"><img src="https://cdn.shopify.com/s/files/1/0757/9955/files/empty-state.svg" role="presentation" alt="" class="Polaris-EmptyState__Image"></div>
+				  </div>
+				</div>
+				<!-- end empty -->
+		</div>
+
+		 <div class="clear-space"></div>
+		  <div class="clear-space"></div>
+		<div class="dashboard-footer">
+				<div class="Polaris-FooterHelp">
+					<div class="Polaris-FooterHelp__Content">
+					    <div class="Polaris-FooterHelp__Icon">
+					    	<span class="Polaris-Icon Polaris-Icon--colorTeal Polaris-Icon--isColored Polaris-Icon--hasBackdrop"><svg class="Polaris-Icon__Svg" viewBox="0 0 20 20" focusable="false" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="currentColor"></circle><path d="M10 0C4.486 0 0 4.486 0 10s4.486 10 10 10 10-4.486 10-10S15.514 0 10 0m0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8m0-4a1 1 0 1 0 0 2 1 1 0 1 0 0-2m0-10C8.346 4 7 5.346 7 7a1 1 0 1 0 2 0 1.001 1.001 0 1 1 1.591.808C9.58 8.548 9 9.616 9 10.737V11a1 1 0 1 0 2 0v-.263c0-.653.484-1.105.773-1.317A3.013 3.013 0 0 0 13 7c0-1.654-1.346-3-3-3"></path></svg></span>
+					    </div>
+					    <div class="Polaris-FooterHelp__Text">Learn more about <a class="Polaris-Link" href="https://help.shopify.com/manual/orders/fulfill-orders" data-polaris-unstyled="true">SEO Audit</a>.</div>
+					</div>
+				</div>
+			</div>	
+			 <div class="clear-space"></div>
+			  <div class="clear-space"></div>
+	</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+
+	function openBox(evt, tabName) {
+	    var i, tabcontent, tablinks;
+	    tabcontent = document.getElementsByClassName("tabcontent");
+	    for (i = 0; i < tabcontent.length; i++) {
+	        tabcontent[i].style.display = "none";
+	    }
+	    tablinks = document.getElementsByClassName("tablinks");
+	    for (i = 0; i < tablinks.length; i++) {
+	        tablinks[i].className = tablinks[i].className.replace(" active", "");
+	    }
+	    document.getElementById(tabName).style.display = "block";
+	    evt.currentTarget.className += " active";
+	}
+
+
+</script>
+</html>

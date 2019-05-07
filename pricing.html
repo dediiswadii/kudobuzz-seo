@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://sdks.shopifycdn.com/polaris/2.1.2/polaris.min.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="Polaris-Page">
+		<!-- Header navigation -->
+		  <div class="Polaris-Page__Header Polaris-Page__Header--hasPagination Polaris-Page__Header--hasBreadcrumbs Polaris-Page__Header--hasRollup Polaris-Page__Header--hasSecondaryActions">
+		    <div class="Polaris-Page__Navigation">
+			      <nav role="navigation"><a class="Polaris-Breadcrumbs__Breadcrumb" data-polaris-unstyled="true">
+			      	<span class="Polaris-Breadcrumbs__Icon">
+			      		<span class="Polaris-Icon">
+			      			<svg class="Polaris-Icon__Svg" viewBox="0 0 20 20" focusable="false" aria-hidden="true">
+			      				<path d="M12 16a.997.997 0 0 1-.707-.293l-5-5a.999.999 0 0 1 0-1.414l5-5a.999.999 0 1 1 1.414 1.414L8.414 10l4.293 4.293A.999.999 0 0 1 12 16" fill-rule="evenodd"></path>
+			      			</svg>
+			      		</span>
+			      	</span>	
+			      	<span class="Polaris-Breadcrumbs__Content">Back to dashboard</span></a>
+			     </nav>
+		      
+		          
+		    </div>
+		  </div>
+		 <!-- End Header navigation -->
+
+		  <div class="clear-space"></div>
+		  <!-- Banner upgrade -->
+			<div class="Polaris-Banner Polaris-Banner--statusInfo Polaris-Banner--withinPage" tabindex="0" role="status" aria-live="polite" aria-labelledby="Banner7Heading" aria-describedby="Banner7Content">
+				<div class="Polaris-Banner__Ribbon">
+					<span class="Polaris-Icon Polaris-Icon--colorTealDark Polaris-Icon--isColored Polaris-Icon--hasBackdrop"><svg class="Polaris-Icon__Svg" viewBox="0 0 20 20" focusable="false" aria-hidden="true"><g fill-rule="evenodd"><circle cx="10" cy="10" r="9" fill="currentColor"></circle><path d="M10 0C4.486 0 0 4.486 0 10s4.486 10 10 10 10-4.486 10-10S15.514 0 10 0m0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8m1-5v-3a1 1 0 0 0-1-1H9a1 1 0 1 0 0 2v3a1 1 0 0 0 1 1h1a1 1 0 1 0 0-2m-1-5.9a1.1 1.1 0 1 0 0-2.2 1.1 1.1 0 0 0 0 2.2"></path></g></svg></span>
+				</div>
+				<div>
+						<div class="Polaris-Banner__Heading" id="Banner7Heading">
+							<p class="Polaris-Heading">Free Plan Access</p>
+						</div>
+					<div class="Polaris-Banner__Content" id="Banner7Content">
+							<p>You are currently on a free plan and you have access to:</p>
+							<ul>
+								<li>
+									Manual SEO Tools
+								</li>
+								<li>
+									Unlimited Manual Optimization
+								</li>
+							</ul>
+							<p>
+								Start a 7 days free trial of any of our Premium Plans today. You can always switch back to the free plan anytime. 
+							</p>
+					</div>
+				</div>
+			</div>
+
+		<div class="dashboard-root">
+			 	<div class="pricing">
+					
+					<div class="pricing-step pro">
+						<div class="step-title">
+							<div id="pricing-group" class="pricing-card-group ">
+								 <div class="price-card" >
+										<div class="center-flex">
+
+											<!-- Pro pricing cards-->
+											<div class="pricing-box single">
+												<div class="pricing-group-content cards-block">
+													<div class="header-price">
+														<div class="pricing-name">
+															<h1>Pro</h1>
+														</div>
+														<div class="price-box">
+															<div class="price">
+																<h1>$ 19.99<h1>
+															</div>
+															<div class="description">
+																per month
+															</div>
+														</div>
+													</div>
+													<div class="content-price">
+															<div class="price-features">
+																<div class="list-features">
+																	<ul>
+																		<li class="line">
+																			<h4>
+																				+ Free Plan
+																			</h4>
+																		</li>
+																		<li class="line">
+																			<h4>
+																				Autopilot (SEO Automation)
+																			</h4>	
+																		</li>
+																		<li class="line">
+																			<h4>
+																				Sitemap Management
+																			</h4>	
+																		</li>
+																		<li class="line">
+																			<h4>
+																				Broken Links Management
+																			</h4>	
+																		</li>
+																		<li class="line">
+																			<h4>
+																				JSON‑LD for SEO (Basic)
+																			</h4>	
+																		</li>
+																		<li class="line">
+																			<h4>
+																				Realtime Optimization Report
+																			</h4>	
+																		</li>
+																		<li class="line">
+																			<h4>
+																				90 Days Ranking Booster (Bonus)
+																			</h4>	
+																		</li>
+																	
+																	</ul>
+																</div>
+															</div>
+													</div>
+
+														<button type="button" class="Polaris-Button Polaris-Button--primary disable btn-pricing bottom"><span class="Polaris-Button__Content"><span>Start 7 Days Free Trial</span></span></button>
+												</div>	
+											</div>	
+
+
+											<!-- Business pricing cards-->
+											<div class="pricing-box single">
+												<div class="pricing-group-content cards-block">
+													<div class="header-price">
+														<div class="pricing-name">
+															<h1>Business</h1>
+														</div>
+														<div class="price-box">
+															<div class="price">
+																<h1>$ 199.99<h1>
+															</div>
+															<div class="description">
+																per month
+															</div>
+														</div>
+													</div>
+													<div class="content-price">
+															<div class="price-features">
+																<div class="list-features">
+																	<ul>
+																		<li class="line">
+																			<h4>
+																				+ Pro Plan
+																			</h4>
+																		</li>
+																		<li class="line">
+																			<h4>
+																				Advance JSON-LD for SEO
+																			</h4>	
+																		</li>
+																		<li class="line">
+																			<h4>
+																				Page Speed Optimization  (Google Standard )
+																			</h4>	
+																		</li>
+																		<li class="line">
+																			<h4>
+																				Keyword Research (50 products / Keywords)
+																			</h4>	
+																		</li>
+																		<li class="line">
+																			<h4>
+																				Premium Support (Phone / Video) 
+																			</h4>	
+																		</li>
+																		<li class="line">
+																			<h4>
+																				SEO Coaching (Bonus)
+																			</h4>	
+																		</li>
+
+																	</ul>
+																</div>
+															</div>
+													</div>
+
+														<button type="button" class="Polaris-Button Polaris-Button--primary disable btn-pricing bottom"><span class="Polaris-Button__Content"><span>Start 7 Days Free Trial</span></span></button>
+												</div>	
+											</div>	
+
+											<!-- pricing cards-->
+											<div class="pricing-box single">
+												<div class="pricing-group-content cards-block">
+													<div class="header-price">
+														<div class="pricing-name">
+															<h1>Enterprise</h1>
+														</div>
+														<div class="price-box">
+															<div class="price">
+
+																<h1>$ 399.99<h1>
+															</div>
+															<div class="description">
+																per month
+															</div>
+														</div>
+													</div>
+													<div class="content-price">
+															<div class="price-features">
+																<div class="list-features">
+																	<ul>
+																		<li class="line">
+																			<h4>
+																				+ Business Plan
+																			</h4>
+																		</li>
+																		<li class="line">
+																			<h4>
+																				2 White-hat Backlinks Monthly
+																			</h4>	
+																		</li>
+																		<li class="line">
+																			<h4>
+																				5 Social Signal Monthly
+																			</h4>	
+																		</li>
+																		<li class="line">
+																			<h4>
+																				Alexa Ranking Booster
+																			</h4>	
+																		</li>
+																		<li class="line">
+																			<h4>
+																				Monthly Keyword Ranking Report
+																			</h4>	
+																		</li>
+																		<li class="line">
+																			<h4>
+																				Monthly Competitor Analysis Report
+																			</h4>	
+																		</li>
+																		<li class="line">
+																			<h4>
+																				Monthly Organic Traffic Report
+																			</h4>	
+																		</li>
+																		<li class="line">
+																			<h4>
+																				Hands-on Support
+																			</h4>	
+																		</li>
+																		<li class="line">
+																			<h4>
+																				Sales Conversion Optimization (Bonus)
+																			</h4>	
+																		</li>
+
+																	</ul>
+																</div>
+															</div>
+													</div>
+
+														<button type="button" class="Polaris-Button Polaris-Button--primary disable btn-pricing bottom"><span class="Polaris-Button__Content"><span>Start 7 Days Free Trial</span></span></button>
+												</div>	
+											</div>	
+										</div>
+
+								 </div>
+							</div>
+						</div>
+			      	</div>
+				</div>
+		</div>
+
+		<div class="Polaris-Page__Content">
+			<div class="Polaris-Card">
+				<div class="Polaris-Card__Header">
+			      <h2 class="Polaris-Heading">FAQs</h2>
+			    </div>
+				<div class="faq-box">
+					<div class="faq-box-half">
+						<div class="accordion-box">	
+							<div class="accordion-single">
+								<button class="accordion"><p>What is Autopilot in SEO Doctor?</p></button>
+								<div class="panel">
+								  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+								</div>
+							</div>
+							<div class="accordion-single">
+								<button class="accordion"><p>What are the features in Autopilot?</p></button>
+								<div class="panel">
+								 
+								  		<ul>
+								  			<li>
+								  				Realtime SEO Title Optimization
+								  			</li>
+								  			<li>
+								  				Realtime Meta Descriptions Optimization
+								  			</li>
+								  			<li>
+								  				Realtime Image Compression
+								  			</li>
+								  			<li>
+								  				Realtime Alt Text Repairs
+								  			</li>
+								  			<li>
+								  				Realtime 404 Error Repairs
+								  			</li>
+								  			<li>
+								  				JSON-LD Structured Data Support
+								  			</li>
+								  			<li>
+								  				Realtime Reporting
+								  			</li>
+								  			<li>
+								  				Email Reporting
+								  			</li>
+								  		</ul>
+								
+								</div>
+							</div>
+							<div class="accordion-single">
+								<button class="accordion"><p>What do I get on the free plan?</p></button>
+								<div class="panel">
+								  <p>You get to manually optimize your own SEO using our in-built free tools such as:</p>
+								  <ul>
+									  	<li>
+									  		SEO Issues Scan
+									  	</li>
+									  	<li>
+									  		Edit SEO Titles
+									  	</li>
+									  	<li>
+									  		Edit Meta Descriptions
+									  	</li>
+									  	<li>
+									  		Image Compression
+									  	</li>
+									  	<li>
+									  		Image Alt Text Repairs
+									  	</li>
+									  	<li>
+									  		404 Error Tracker
+									  	</li>
+									  	<li>
+									  		Sitemap submission
+									  	</li>
+									  	<li>
+									  		Google Page Speed Integration
+									  	</li>
+									  	<li>
+									  		Google Mobile Friendly Test
+									  	</li>
+									  	<li>
+									  		Google Webmaster Integration
+									  	</li>
+								  </ul>
+								</div>
+							</div>
+							<div class="accordion-single">
+								<button class="accordion"><p>What is the difference between JSON-LD Basic and Advance?</p></button>
+								<div class="panel">
+								  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+								</div>
+							</div>
+							<div class="accordion-single">
+								<button class="accordion"><p>What is SEO Coaching?</p></button>
+								<div class="panel">
+								  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div style="margin: 30px;"></div>
+					<div class="faq-box-half">
+						<div class="accordion-box">	
+							<div class="accordion-single">
+								<button class="accordion"><p>What is Sales Conversion Optimization?</p></button>
+								<div class="panel">
+								  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+								</div>
+							</div>
+							<div class="accordion-single">
+								<button class="accordion"><p>What do I get from Premium Support?</p></button>
+								<div class="panel">
+								  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+								</div>
+							</div>
+							<div class="accordion-single">
+								<button class="accordion"><p>What do I get from Hands-on Support?</p></button>
+								<div class="panel">
+								  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+								</div>
+							</div>
+							<div class="accordion-single">
+								<button class="accordion"><p>Where do you build Backlinks and Social Signals from?</p></button>
+								<div class="panel">
+								  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+					<div class="clear-space"></div>
+			</div>
+
+		</div>
+		 <div class="clear-space"></div>
+
+		<div class="dashboard-footer">
+			<div class="Polaris-FooterHelp">
+				<div class="Polaris-FooterHelp__Content">
+				    <div class="Polaris-FooterHelp__Icon">
+				    	<span class="Polaris-Icon Polaris-Icon--colorTeal Polaris-Icon--isColored Polaris-Icon--hasBackdrop"><svg class="Polaris-Icon__Svg" viewBox="0 0 20 20" focusable="false" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="currentColor"></circle><path d="M10 0C4.486 0 0 4.486 0 10s4.486 10 10 10 10-4.486 10-10S15.514 0 10 0m0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8m0-4a1 1 0 1 0 0 2 1 1 0 1 0 0-2m0-10C8.346 4 7 5.346 7 7a1 1 0 1 0 2 0 1.001 1.001 0 1 1 1.591.808C9.58 8.548 9 9.616 9 10.737V11a1 1 0 1 0 2 0v-.263c0-.653.484-1.105.773-1.317A3.013 3.013 0 0 0 13 7c0-1.654-1.346-3-3-3"></path></svg></span>
+				    </div>
+				    <div class="Polaris-FooterHelp__Text">Learn more about <a class="Polaris-Link" href="https://help.shopify.com/manual/orders/fulfill-orders" data-polaris-unstyled="true">SEO Audit</a>.</div>
+				</div>
+			</div>
+		</div>	
+			
+		
+
+		
+		<div class="clear-space"></div>
+		
+	</div>
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+	    $("input[name$='pricing-ch']").click(function() {
+	        var test = $(this).val();
+
+	        $("div.price-card").hide();
+	        $("#pricing" + test).show();
+
+	        $("div.selected-choice").removeClass("selected-choice");
+	        $( "#select" + test).addClass( "selected-choice" );
+
+	        $("#pricing-group").show();
+	        $("div.point-step").removeClass("disable-step");
+
+	       
+
+	    });
+	});
+</script>
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+</html>
