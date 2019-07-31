@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5px" height="16px" viewBox="0 0 5 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M200,10 C201.103,10 202,10.897 202,12 C202,13.103 201.103,14 200,14 C198.897,14 198,13.103 198,12 C198,10.897 198.897,10 200,10 Z M194,10 C195.103,10 196,10.897 196,12 C196,13.103 195.103,14 194,14 C192.897,14 192,13.103 192,12 C192,10.897 192.897,10 194,10 Z M188,10 C189.103,10 190,10.897 190,12 C190,13.103 189.103,14 188,14 C186.897,14 186,13.103 186,12 C186,10.897 186.897,10 188,10 Z" id="path-1"></path>
+    </defs>
+    <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="seo-doctor-dashboard" transform="translate(-718.000000, -617.000000)">
+            <g id="Group" transform="translate(271.000000, 603.000000)">
+                <g id="Group-10" transform="translate(245.000000, 0.000000)">
+                    <g id="Group-24" transform="translate(10.465116, 10.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Icon" fill="#FFFFFF" transform="translate(194.000000, 12.000000) rotate(90.000000) translate(-194.000000, -12.000000) " xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>icon-indicator-up</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M7.75,15.5 C3.46979319,15.5 0,12.0302068 0,7.75 C0,3.46979319 3.46979319,0 7.75,0 C12.0302068,0 15.5,3.46979319 15.5,7.75 C15.5,12.0302068 12.0302068,15.5 7.75,15.5 Z M7.75,15 C11.7540644,15 15,11.7540644 15,7.75 C15,3.74593556 11.7540644,0.5 7.75,0.5 C3.74593556,0.5 0.5,3.74593556 0.5,7.75 C0.5,11.7540644 3.74593556,15 7.75,15 Z M8.44999999,6.03085856 L8.44999999,11.5181818 L7.05000001,11.5181818 L7.05000001,6.03085856 L5.70454545,7.37631311 L4.71459598,6.38636364 L7.75,3.35095961 L10.785404,6.38636364 L9.79545455,7.37631311 L8.44999999,6.03085856 Z" id="icon-indicator-up" fill="#696C85" fill-rule="nonzero"></path>
+    </g>
+</svg>
