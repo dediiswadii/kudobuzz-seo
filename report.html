@@ -56,21 +56,21 @@
 								</a>
 								
 							</li>
-							<li class="has-child">
-								<a href="">
-									<p>
-										Manual Optimization	
-									</p>
-									
-									<div class="icon">
-										<svg width="5px" height="6px" viewBox="0 0 5 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-										    <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-										        <path d="M0.777350098,0.0839748528 L3.87596228,2.14971631 C4.10572662,2.30289254 4.16781356,2.61332721 4.01463733,2.84309155 C3.9780199,2.8980177 3.93088842,2.94514917 3.87596228,2.9817666 L0.777350098,5.04750806 C0.547585754,5.20068428 0.237151082,5.13859735 0.0839748528,4.90883301 C0.0292190137,4.82669925 0,4.7301954 0,4.63148291 L0,0.5 C0,0.223857625 0.223857625,0 0.5,0 C0.598712493,0 0.695216339,0.0292190137 0.777350098,0.0839748528 Z" id="Rectangle" fill="#212B36"></path>
-										    </g>
-										</svg>
+							<li id="has-child-btn" class="has-child">
+									<div class="child">
+										<p>
+											Manual Tools      	
+										</p>
+										
+										<div class="icon">
+											<svg width="5px" height="6px" viewBox="0 0 5 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+											    <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+											        <path d="M0.777350098,0.0839748528 L3.87596228,2.14971631 C4.10572662,2.30289254 4.16781356,2.61332721 4.01463733,2.84309155 C3.9780199,2.8980177 3.93088842,2.94514917 3.87596228,2.9817666 L0.777350098,5.04750806 C0.547585754,5.20068428 0.237151082,5.13859735 0.0839748528,4.90883301 C0.0292190137,4.82669925 0,4.7301954 0,4.63148291 L0,0.5 C0,0.223857625 0.223857625,0 0.5,0 C0.598712493,0 0.695216339,0.0292190137 0.777350098,0.0839748528 Z" id="Rectangle" fill="#212B36"></path>
+											    </g>
+											</svg>
+										</div>
 									</div>
-									</a>
-									<div class="menu-child">
+									<div id="menu-child-box" class="menu-child">
 										<ul>
 											<li>
 												<a href="page-auditor.html">
@@ -78,13 +78,8 @@
 												</a>
 											</li>
 											<li>
-												<a href="broken-links.html">
-													Broken links
-												</a>
-											</li>
-											<li>
 												<a href="image-alt-text.html">
-													Image Alt text
+													Image Alt Text
 												</a>
 											</li>
 											<li>
@@ -98,13 +93,18 @@
 												</a>
 											</li>
 											<li>
+												<a href="broken-links.html">
+													Broken Links
+												</a>
+											</li>
+											<li>
 												<a href="social-signal.html">
 													Social Signal 
 												</a>
 											</li>
 											<li>
 												<a href="competitor-keyword-finder.html">
-													Competitor Keyword Finder
+													 Keyword Finder
 												</a>
 											</li>
 										</ul>
@@ -114,11 +114,12 @@
 
 							</li>
 							<li>
-								<a href="sitemap.html">
-									Sitemap
+								<a href="report.html">
+									Report and Analytics
 								</a>
 								
 							</li>
+							
 							<li>
 								<a href="keyword-setup.html">
 									Keyword Setup
@@ -126,8 +127,8 @@
 								
 							</li>
 							<li>
-								<a href="report.html">
-									Report and Analytics
+								<a href="sitemap.html">
+									Sitemap
 								</a>
 								
 							</li>
@@ -141,7 +142,8 @@
 					</div>
 				</div>
 			</div>
-			<a href="pricing.html" type="button" class="Polaris-Button Polaris-Button--primary" style="margin-left: auto;"><span class="Polaris-Button__Content"><span>Upgrade</span></span></a>
+			<a href="pricing.html" type="button" class="Polaris-Button Polaris-Button--primary" style="margin-left: auto;"><span class="Polaris-Button__Content"><span>Activate Pro</span></span></a>
+			<a href="pricing.html" type="button" class="Polaris-Button " style="margin-left: 5px;"><span class="Polaris-Button__Content"><span>Help Guides</span></span></a>
 	</div>
 	
 	<div class="page-layout">
@@ -827,6 +829,13 @@
 		    event.stopPropagation();
 		  });	
 
+		  
+		  $('#has-child-btn').on('click', function(event){
+		    if ( $('#menu-child-box').hasClass('active') === false )
+		    	$('#menu-child-box').addClass('active');
+				
+		    event.stopPropagation();
+		  });	
 		  	$(window).click(function() {
 				$('#menu-box').removeClass('active');
 				$('#menu-btn').removeClass('hide');

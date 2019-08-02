@@ -139,7 +139,7 @@
 					</div>
 				</div>
 			</div>
-			<a href="pricing.html" type="button" class="Polaris-Button Polaris-Button--primary" style="margin-left: auto;"><span class="Polaris-Button__Content"><span>Upgrade</span></span></a>
+			<a href="pricing.html" type="button" class="Polaris-Button " style="margin-left: auto;"><span class="Polaris-Button__Content"><span>Help Guides</span></span></a>
 	</div>
 	<div class="page-layout">
 		<div class="Polaris-Page">
@@ -707,6 +707,14 @@
 		    event.stopPropagation();
 		  });	
 
+
+		  $('#has-child-btn').on('click', function(event){
+		    if ( $('#menu-child-box').hasClass('active') === false )
+		    	$('#menu-child-box').addClass('active');
+				
+		    event.stopPropagation();
+		  });	
+		  
 		  	$(window).click(function() {
 				$('#menu-box').removeClass('active');
 				$('#menu-btn').removeClass('hide');

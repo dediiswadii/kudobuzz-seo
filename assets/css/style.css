@@ -43,8 +43,8 @@ ul,h1{
 	height: 100%;
 	flex: 1 1 14rem;
 }
-.dashboard-root .Polaris-Layout__Section--secondary .Polaris-Card{
-	border-radius: 0;
+.dashboard-root .Polaris-Card{
+	
 	height: 100%;
 }
 .dashboard-root .Polaris-Card__Header{
@@ -1434,14 +1434,14 @@ line-height: 27px;
 	background: #F4F6F8;
 }
 
-.custom-header .nav .menu-box ul li a{
+.custom-header .nav .menu-box ul li a,.custom-header .nav .menu-box ul li .child {
 	text-decoration: none;
 	color: #212B36;
 	    display: flex;
     align-items: center;
 padding: 8px 15px;
 }
-.custom-header .nav .menu-box.active ul .has-child .menu-child{
+.custom-header .nav .menu-box.active ul .has-child .menu-child,.custom-header .nav .menu-box.active ul .has-child .child{
 	display: flex;
 }
 .custom-header .nav .menu-box ul .has-child .menu-child{
@@ -1483,8 +1483,8 @@ padding: 8px 15px;
 	
 
 }
-.custom-header .nav .menu-box ul .has-child a p{
-	min-width: 132px;
+.custom-header .nav .menu-box ul .has-child a p, .custom-header .nav .menu-box ul li .child p{
+	min-width: 182px;
 }
 
 .custom-header .nav .menu-box ul .has-child .menu-child ul li:hover{
@@ -1923,13 +1923,8 @@ margin-left: auto;
 	.dashboard-content.button-menu-box{
 		display: none;
 	}
-	.right-side-section{
-		position: unset;
-		width: 100%;
-		height: 100%;
-		
-		    margin: 16px 0;
-
+	.right-side-section {
+    	width: 375px;
 	}
 	.illustrations{
 		display: none;
@@ -1978,13 +1973,27 @@ margin-left: auto;
 	 .dashboard-count:last-child{
 	 	margin-bottom: 0;
 	 }
+	 .pricing{
+	 	overflow: hidden;
+    	max-width: 730px;
+    	overflow-x: auto;
+	 }
+	 .pricing-box{
+	 	min-width: 270px;
+	 }
+	 .price h1,.pricing-name h1{
+	 	font-size: 20px;
+	 }
 }
 @media screen and (max-width: 425px){
 	.button-root {
 	    width: 73%;
 	}
-	.dashboard-root img{
-		width: 425px;
+	.dashboard-root{
+		display: block;
+	}
+	.dashboard-root .Polaris-Layout__Section{
+		width: 100%;
 	}
 	.custom-tooltip{
 		width: 290px;
@@ -1992,9 +2001,7 @@ margin-left: auto;
 	.custom-tooltip.up {
 	    bottom: 550px;
 	}
-	.Polaris-TextContainer{
-		padding: 0 15px;
-	}
+	
 	.autopilot-report{
 		width: 768px;
 	}
@@ -2004,7 +2011,7 @@ margin-left: auto;
 		overflow-x: auto;
 	}
 	.tabcontent{
-		padding-left: 15px;
+		padding-left: 0px;
 	}
 	.header-table{
 		display: block;
@@ -2045,33 +2052,98 @@ margin-left: auto;
 	    width: 93%;
 
 	}
-}
-@media screen and (max-width: 375px){
-	.button-root {
-	    width: 83%;
+	.right-side-section{
+		position: unset;
+    	margin-top: 20px;
 	}
-	.dashboard-root img{
-		width: 375px;
+	.right-side-section .Polaris-Card__Footer{
+		position: unset;
 	}
-	.radiobutton-group {
-    	max-width: 290px;
+	.dashboard-root .Polaris-Layout__Section--secondary{
+		display: none;
 	}
-}
-@media screen and (max-width: 320px){
-	.button-root {
-	    width: 97%;
+	.dashboard-count{
+		width: 100%;
+    	min-height: unset;
+    	position: relative;
+    	    margin: 0 0px 10px 0px;
 	}
-	.dashboard-root img{
-		width: 320px;
+	.right-side-section{
+		width: 100%;
 	}
-	.radiobutton-group {
-	    max-width: 245px;
+	
+	.page-layout{
+		margin: 0;
 	}
-	.price h1 {
-    	font-size: 27px;
+	.Polaris-Layout__Annotation {
+    	padding: 1rem 2rem 2rem 2rem;
 	}
-	.Polaris-Modal-Dialog__Modal.tell-bussiness-modal{
-		    max-height: 41.5rem;
+	.dashboard-count a {
+    
+	    position: absolute;
+	    top: 40px;
+	    bottom: 0;
+	    max-height: 36px;
+	    margin: auto;
+	    right: 10px;
+	}
+	.Polaris-Layout__AnnotatedSection, .Polaris-Layout__Section{
+		max-width: unset;
+	}
+	.dashboard-root .Polaris-Layout__Section{
+		padding: 0px 0px 0 0;
+		
+	}
+	.custom-header {
+    	padding: 1rem 2rem;
+	}
+	.preview-data{
+		float: none;
+		text-align: right;
+	}
+	.right-side-section .Polaris-Card{
+		border-radius: 0;
+	}
+	.dashboard-page-header .Polaris-TextContainer,.dashboard-content.count-section{
+		padding: 2rem;
+	}
+	.custom-header .nav .menu-box .menu-box-header .title{
+		display: none;
+	}
+	.price-features .list-features ul li{
+		font-size: 12px;
+		    min-height: 24px;
+	}
+	.pricing-box {
+    	min-width: 240px;
+	}
+	.btn-pricing{
+		margin: 0;
+	}
+	.custom-header .nav .menu-box.active .menu-box-content {
+    	left: -7px;
+    	top: 53px;
+	}
+	.Polaris-Layout__Section{
+		max-width: 425px;
 	}
 }
 
+@media screen and (max-width: 375px){
+	.Polaris-Layout__Section{
+		max-width: 375px;
+	}
+	.custom-header .nav .menu-box ul .has-child a p, .custom-header .nav .menu-box ul li .child p{
+		    min-width: 140px;
+	}
+	.custom-header .nav .menu-box .has-child:hover .menu-child{
+		    left: 168px;
+		    padding: 0;
+	}
+
+}
+@media screen and (max-width: 320px){
+	.Polaris-Layout__Section{
+		max-width: 320px;
+	}
+}
