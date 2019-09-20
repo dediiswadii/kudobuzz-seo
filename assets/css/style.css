@@ -238,7 +238,7 @@ margin-right: 0;
 }
 
 .custom-tooltip.up{
-	bottom: 144px;
+	bottom: 4px;
 }
 .custom-tooltip-up:after {
     content: "";
@@ -1603,6 +1603,7 @@ padding: 8px 15px;
 .custom-tooltip.have-menu .menu ul li{
 	display: inline-block;
 	margin: 5px 0;
+	width: 100%;
 }
 .custom-tooltip.have-menu .menu ul li a{
 	transition: .2s;
