@@ -15,9 +15,12 @@ ul,h1{
 	height: 30px;
 	width: 100%;
 }
-.dashboard-root{
+.dashboard-root, .error-root{
 	position: relative;
 	height: 100%;
+}
+.error-root{
+	text-align: center;
 }
 .dashboard-root .button-root{
 	
@@ -116,10 +119,7 @@ margin-right: 0;
 .dashboard-content.count-section{
 	width: 100%;
     max-width: 790px;
-    position: absolute;
-    margin: auto;
-        top: 90px;
-    bottom: 140px;
+    margin: 20px 0 10px;
     display: flex;
     align-items: center;
 }
@@ -128,9 +128,7 @@ margin-right: 0;
 	margin: auto;
 }
 .dashboard-content.button-menu-box{
-	position: absolute;
-    bottom: 10px;
-    left: 0;
+	
 }
 .tag-single{
 	margin-top: 4px;
@@ -1648,6 +1646,11 @@ padding: 8px 15px;
 .custom-tooltip.have-menu .menu a .icon{
 	margin-right: 10px;
 	display: inline-flex;
+	    width: 24px;
+    height: 24px;
+}
+.custom-tooltip.have-menu .menu a .icon img{
+	margin: auto;
 }
 .have-menu .header{
 	display: flex;
@@ -1851,6 +1854,179 @@ margin-left: auto;
     box-sizing: border-box;
     display: inline-block;
     filter: invert(42%) sepia(12%) saturate(2842%) hue-rotate(195deg) brightness(76%) contrast(75%);
+}
+
+.mini-button{
+	    display: flex;
+    font-size: 13px;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.mini-button img{
+	margin-right: 5px;
+}
+.mini-button p{
+	color: #0694EA;
+}
+.mini-button:hover p{
+	text-decoration: underline;
+}
+
+/* ON/OFF Switch */
+.onoffswitch {
+  position: relative;
+}
+.toggle-group {
+transition: .1s;
+max-width: 58px;
+	}
+.toggle-group:hover {
+  opacity: .8;
+}
+.onoffswitch .onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  margin: 0;
+      height: 24px;
+      width: 45px;
+      background: #e4e5e8;
+}
+.onoffswitch .onoffswitch-inner {
+  width: 200%;
+  margin-left: -107%;
+  -webkit-transition: margin 0.15s ease-in-out;
+  -o-transition: margin 0.15s ease-in-out;
+  -moz-transition: margin 0.15s ease-in-out;
+  transition: margin 0.15s ease-in-out;
+}
+.onoffswitch .onoffswitch-inner:before{
+  float: left;
+  width: 46px;
+  height: 24px;
+  padding: 0;
+  line-height: 24px;
+  font-size: 80%;
+  color: hsl(0, 0%, 100%);
+  font-weight: normal;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.onoffswitch .onoffswitch-inner:before {
+  content: "";
+  
+  padding-left: 10px;
+  background-color: #4466E4;
+  color: #fff;
+  line-height: 26px;
+}
+.onoffswitch .onoffswitch-inner:after {
+      content: "";
+      
+    padding-right: 10px;
+    background-color: #E3E3E3;
+    color: #7A8998;
+    text-align: right;
+    line-height: 26px;
+}
+.onoffswitch .onoffswitch-switch {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  position: absolute;
+  top: 2px;
+  bottom: 0;
+  right: 23px;
+  -webkit-transition: right 0.15s ease-in-out;
+  -o-transition: right 0.15s ease-in-out;
+  -moz-transition: right 0.15s ease-in-out;
+  transition: right 0.15s ease-in-out;
+
+	background: #FFFFFF;
+	box-shadow: -1px 0 1px 0 rgba(0,0,0,0.10), 0 1px 1px 0 rgba(0,0,0,0.20);
+	border-radius: 20px;
+}
+.toggle-group {
+      position: relative;
+    width: 100%;	
+}
+.toggle-group input[type=checkbox] {
+  position: absolute;
+  left: 10px;
+}
+.toggle-group input[type=checkbox]:checked ~ .onoffswitch .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+.page-content-body{
+	margin: 20px 0 0;
+}
+.toggle-group input[type=checkbox]:checked ~ .onoffswitch .onoffswitch-label .onoffswitch-switch {
+  right: 2px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+.toggle-group input[type=checkbox]:focus ~ .onoffswitch {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+.toggle-group label {
+  position: absolute;
+  cursor: pointer;
+  padding-left: 70px;
+  display: inline-block;
+  text-align: left;
+  line-height: 24px;
+      width: 450px;
+  z-index: 1;
+  height: 24px;
+  font-weight: 200;
+}
+:focus{
+	outline: -webkit-focus-ring-color auto 0px;
+}
+.Polaris-TextField--hasValue{
+	z-index: 0;
+}
+.modal{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	z-index: 2;
+}
+.modal .background{
+	width: 100%;
+	height: 100%;
+	opacity: 0.9;
+	background: #34495E;
+}
+.modal .background.white{
+	background: #f4f6f8;
+}
+.modal .box{
+	    max-width: 300px;
+    position: absolute;
+    margin: auto;
+    display: inline-block;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+.modal .box.center{
+	text-align: center;
+}
+.modal .box .title{
+	font-size: 24px;
+	font-weight: 600;
+}
+.modal .box .description{
+	margin: 20px 0; 
 }
 @media screen and (max-width: 1200px) {
 	.page-layout{

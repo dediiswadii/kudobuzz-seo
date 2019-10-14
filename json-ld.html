@@ -105,6 +105,11 @@
 													Competitor Keyword Finder
 												</a>
 											</li>
+											<li>
+												<a href="page-speed-booster.html">
+													 Page Speed Booster
+												</a>
+											</li>
 										</ul>
 									</div>
 							
@@ -161,12 +166,12 @@
 									<p class="Polaris-Heading">JSON-LD features</p>
 								</div>
 							<div class="Polaris-Banner__Content" id="Banner7Content">
-									<p>Allows search engines to better understand your website and your business. Activating it on your store will improve your ranking and click rate. <a href="">Learn more</a></p>
+									<p>Allows search engines to better understand your website and your business. Activating it on your store will improve your ranking and click rate.</p>
 									<div class="Polaris-Banner__Actions">
 										<div class="Polaris-ButtonGroup">
 											<div class="Polaris-ButtonGroup__Item">
 												<button type="button" class="Polaris-Button Polaris-Button--outline">
-													<span class="Polaris-Button__Content"><span>Upgrade</span></span>
+													<span class="Polaris-Button__Content"><span>Learn more</span></span>
 												</button>
 
 											</div>
@@ -212,15 +217,19 @@
 					        <div class="Polaris-Card">
 								<div class="Polaris-Card__Section">
 								    <div class="Polaris-SettingAction">
-								      <div class="Polaris-SettingAction__Setting">
-								      	<span class="Polaris-TextStyle--variationPositive">Your store is not currently being displayed.</span>
-								      	
+								      <div class="Polaris-SettingAction__Setting flex-center">
+								      		<span class="Polaris-TextStyle--variationPositive">Your store is not currently being displayed.</span>
+								      		<div class="Polaris-ButtonGroup__Item" style="margin-left: auto;">
+												<button id="edit-btn" type="button" class="Polaris-Button Polaris-Button--outline">
+													<span class="Polaris-Button__Content"><span>Edit</span></span>
+												</button>
+
+											</div>
 								      </div>
-								   
-								    </div>
+								    	</div>
 
 								    
-								    <div class="information-content">
+								    <div id="inf-box" class="information-content" style="display: none;">
 								    	<div class="clear-space"></div>
 								    	<div class="image-drop">
 								    		<div class="Polaris-Labelled__LabelWrapper">
@@ -401,7 +410,7 @@
 			            									<button type="button" class="Polaris-Button">
 			            										<span class="Polaris-Button__Content">
 			            											<span class="Polaris-Button__Text">
-			            											Install</span>
+			            											Upgrade to install</span>
 			            										</span>
 			            									</button>
 			            								
@@ -447,6 +456,10 @@
 
 <script>
 	$(document).ready(function(){
+		
+		  $('#edit-btn').click(function(){
+		    $('#inf-box').toggle();
+		  });
 		
 		// Meta title description
 	  	$('#RadioButtonMTO1').on('change', function() {
